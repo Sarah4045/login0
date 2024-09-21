@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(black, rgb(101, 84, 84));
+
+    text-align: left;
+}
+
+.login-container {
+    width: 320px;
+    margin: 114px auto;
+    padding:0 25px;
+    padding-bottom: 20px;
+    background: linear-gradient(black, rgb(101, 84, 84));
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(255,255,255, 0.8);
+    transition: box-shadow 0.3s ease;
+    border: 2px solid white;
+    
+    
+    
+}
+.login-container:hover{
+    box-shadow: 0 0 30px white;
+}
+
+
+h2 { 
+    position: absolute;
+    color: rgb(101, 84, 84);
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    width: 250px; 
+    margin: 28px;
+    margin-top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input:hover::placeholder{
+    letter-spacing: 6px;
+    transition: .5s;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 30px;
+    top: 42%; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+    font-size: 18px; 
+    color: #555; 
+}
+
+
+.requirement {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+
+.requirement .icon {
+    margin-right: 10px;
+    color: #1d1b1b; 
+}
+
+.requirement.valid .icon {
+    color: green; 
+}
+
+.requirement.invalid .icon {
+    color: #1d1b1b; 
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(94, 89, 89);
+    border: 2 solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(194, 194, 179);
+}
+
+#forget-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#forget-password:hover {
+    text-decoration: underline;
+}
+
+
+
+
+

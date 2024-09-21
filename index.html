@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required placeholder="Username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password-input" placeholder="Password">
+                <span class="toggle-password" onclick="showPassword()">
+                    <i class="fas fa-eye"></i>
+                </span>
+
+                <div id="password-requirements">
+                        <p><span id="length" class="requirement"><span class="fa-solid fa-circle icon"></span> Password must be at least 8 characters</span></p>
+                        <p><span id="uppercase" class="requirement"><span class="fa-solid fa-circle icon"></span> At least one uppercase letter</span></p>
+                        <p><span id="number" class="requirement"><span class="fa-solid fa-circle icon"></span> At least one number</span></p>
+                </div>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+            <p><a href="#" id="forget-password">Forgot password?</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
